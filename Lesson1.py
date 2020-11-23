@@ -71,15 +71,41 @@
 #print(b)
 
 
-age = int(input(' Введите свой возраст: '))
+#age = int(input(' Введите свой возраст: '))
 
-def age_init(age):
-    if age <= 7:
-        param = 'Детский сад'
-    elif age <= 17:
-        param = 'Школа'
-    else:
-        param = 'Вуз'
-    return (param)
-b = age_init(age)
-print(b)
+#def age_init(age):
+ #   if age <= 7:
+  #      param = 'Детский сад'
+   # elif age <= 17:
+    #    param = 'Школа'
+    #else:
+   #     param = 'Вуз'
+   # return (param)
+#b = age_init(age)
+#print(b)
+
+
+
+def check_str(string1,string2):
+
+    if string1 and string2 == str:
+         result = 0
+  
+            
+    elif string1 == string2:
+       result = 1
+        
+                
+
+    elif string1 != string2 and string1 > string2:
+         result = 2
+            
+    elif string1 != string2 and string2 == 'Learn':
+        result = 3
+                
+                
+    return (result)
+
+result = check_str('строка','строка')
+print(result)
+
