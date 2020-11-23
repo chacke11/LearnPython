@@ -50,30 +50,36 @@
 
 #===================
 
-def get_summ(one, two, delmiter = '&'):
-    one = str(one)
-    two = str(two)
-    delmiter = str(delmiter)
-    final = one + delmiter + two
-    return(final)
+#def get_summ(one, two, delmiter = '&'):
+ #   one = str(one)
+  #  two = str(two)
+   # delmiter = str(delmiter)
+    #final = one + delmiter + two
+    #return(final)
 
 
-a = get_summ('Learn','Python')
-print(a.upper())
+#a = get_summ('Learn','Python')
+#print(a.upper())
 
 
-def format_price(price):
-    price = int(price)
-    price_new = f'Цена {price} руб.'
-    return(price_new)
+#def format_price(price):
+  #  price = int(price)
+  #  price_new = f'Цена {price} руб.'
+  #  return(price_new)
 
-b = format_price
+#b = format_price
+#print(b)
+
+
+age = int(input(' Введите свой возраст: '))
+
+def age_init(age):
+    if age <= 7:
+        param = 'Детский сад'
+    elif age <= 17:
+        param = 'Школа'
+    else:
+        param = 'Вуз'
+    return (param)
+b = age_init(age)
 print(b)
-
-def capitalize(source_string):
-    words = source_string.split(' ')
-    print(words)
-    words = [word.title() for word in words]
-    print(words)
-    result_string = ' '.join(words)
-    return result_string
