@@ -69,3 +69,11 @@ def format_price(price):
 
 b = format_price
 print(b)
+
+def capitalize(source_string):
+    words = source_string.split(' ')
+    print(words)
+    words = [word.title() for word in words]
+    print(words)
+    result_string = ' '.join(words)
+    return result_string
