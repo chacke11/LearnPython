@@ -61,6 +61,8 @@ def get_summ(one, two, delmiter = '&'):
 a = get_summ('Learn','Python')
 print(a.upper())
 
+#===================
+
 
 def format_price(price):
     price = int(price)
@@ -69,11 +71,47 @@ def format_price(price):
 
 b = format_price
 print(b)
+#===================
 
-def capitalize(source_string):
-    words = source_string.split(' ')
-    print(words)
-    words = [word.title() for word in words]
-    print(words)
-    result_string = ' '.join(words)
-    return result_string
+
+string_1 = 'строка'
+string_2 = 'Learn'
+
+def comparison(string_1,string_2):
+    if isinstance(string_1, str) and isinstance(string_1,str):
+        print('0')
+    else:
+        pass 
+    if string_1 == string_2:
+        print('1')
+    else:
+        pass
+    if string_1 != string_2 and string_1 > string_2:
+        print('2')
+    else:
+        pass
+    if string_1 != string_2 and string_2 == 'Learn':
+        print('3')
+    else:
+        pass    
+
+print(comparison(string_1,string_2))
+
+#===================
+
+
+age = int(input('Введите свой возраст - : '))
+
+def your_age(age):
+    if age <= 7:
+        print("Детский сад")
+    if age > 7 and age < 17:
+        print('Школа')
+    if age > 17:
+        print('Вуз')
+
+print(your_age(age))
+
+#===================
+
+        
